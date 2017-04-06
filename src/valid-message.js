@@ -23,7 +23,15 @@ const TYPES = {
   feat: true,
   fix: true,
   patch: true,
-  chore: true
+  chore: true,
+  docs: true,
+  style: true,
+  refactor: true,
+  perf: true,
+  test: true,
+  build: true,
+  ci: true,
+  revert: true,
 }
 
 const TYPE_MAP = {
@@ -33,7 +41,15 @@ const TYPE_MAP = {
   feat: 'feat',
   fix: 'fix',
   patch: 'fix',
-  chore: 'chore'
+  chore: 'chore',
+  docs: 'chore',
+  style: 'chore',
+  perf: 'feat',
+  refactor: 'feat',
+  revert: 'major',
+  test: 'feat',
+  ci: 'feat',
+  build: 'fix'
 }
 
 // removes all lines that start with '#'
